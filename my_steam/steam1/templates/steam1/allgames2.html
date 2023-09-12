@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>All discount's games</title>
+    <link rel="stylesheet" href="{% static 'css/allgames.css' %}">
+    <script src="{% static 'myfirst.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>All discount's games</h1>
+    </div>
+
+    <h1>All Games</h1>
+
+    <ul id="games-container">
+        <li>
+            <strong>Название игры</strong><br>
+            Original Price: Цена<br>
+            Discounted Price: Скидочная цена
+        </li>
+    </ul>
+    <button id="load-more-button">Загрузить еще</button>
+    <button onclick="myFunction()">Click me!</button>
+</body>
+</html>

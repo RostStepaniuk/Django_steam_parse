@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steam Games</title>
+    <link rel="stylesheet" href="{% static 'css/allgames.css' %}">
+</head>
+<body>
+    <h1>Steam Games</h1>
+    <table>
+<!--        <tr>-->
+<!--            <th>Title</th>-->
+<!--            <th>Price</th>-->
+<!--            <th>Discounted Price</th>-->
+<!--        </tr>-->
+        {% for game_key, game_value in games.items %}
+        <tr>
+            <td>{{ game_key }}</td>
+            <td>{{ game_value.title }}</td>
+            <td>{{ game_value.price }}</td>
+            <td>{{ game_value.disc_price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+body {
+    background-image: url("../images/planet.jpg");
+    background-size: cover; /* Растягивает фон на всю площадь экрана, сохраняя пропорции */
+    background-repeat: no-repeat; /* Запрещает повторение фоновой картинки */
+    background-attachment: fixed; /* Фиксирует фоновую картинку при прокрутке страницы */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 128, 0.4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: rgba(0, 123, 255, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto;
+    border-radius: 15px;
+}
+
+.top-left-box {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Поднимаем на половину высоты .top-left-box */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Стили кнопок в .top-left-box */
+.top-left-button {
+    display: block; /* Показать кнопки как блочные элементы, одна под другой */
+    background-color: rgba(0, 123, 255, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    /* Добавляем стиль для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+pre {
+    margin-bottom: 20em; /* Отступ между строками в 2em */
+    padding-left: 20px; /* Отступ текста слева */
+    border-left: 2px solid #333; /* Левая граница текста */
+}
+
